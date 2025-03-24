@@ -23,6 +23,11 @@ import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity
 {
+    /**
+     * this class opens a internal file and saves data into it
+     * then, the file text will be presented on the screen of the application
+     * @author Ofek Dafna
+     */
     private final String FILENAME = "internalFile.txt";
 
     TextView showText;
@@ -72,6 +77,10 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    /**
+     * the function saves new entered text into the file
+     * @param view
+     */
     public void save(View view)
     {
         try
@@ -96,6 +105,10 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * the function resets the text in the file
+     * @param view
+     */
     public void reset(View view)
     {
         try
@@ -120,12 +133,20 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * the function saves the file's contents, adds the newly text to the file and then terminates the app
+     * @param view
+     */
     public void exit(View view)
     {
         save(view);
         finish();
     }
 
+    /**
+     * moves the user to the credits screen
+     * @param view
+     */
     public void credits(View view)
     {
         Intent credits = new Intent(this,credits.class);
