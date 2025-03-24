@@ -1,6 +1,7 @@
 package com.example.internalfiles;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,5 +17,9 @@ public class credits extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
+    }
+    public void save(View view)
+    {
+        finish();
     }
 }

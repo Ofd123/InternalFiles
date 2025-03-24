@@ -1,5 +1,6 @@
 package com.example.internalfiles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -125,6 +126,9 @@ public class MainActivity extends AppCompatActivity
         finish();
     }
 
-    public void credits(View view) {
+    public void credits(View view)
+    {
+        Intent credits = new Intent(this,credits.class);
+        startActivity(credits);
     }
 }
